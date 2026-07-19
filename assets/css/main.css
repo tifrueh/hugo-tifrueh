@@ -299,6 +299,7 @@ blockquote em {
 
 .summary-timestamp {
     margin-bottom: 0.2rem;
+    opacity: 0.71;
 }
 
 .summary-link {
@@ -309,6 +310,7 @@ blockquote em {
 
 .summary-description {
     margin-top: 0.2rem;
+    font-style: italic;
 }
 
 .summary-link:hover {
