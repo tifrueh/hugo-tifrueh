@@ -1,9 +1,9 @@
 {{- define "og-image" }}{{- with resources.Get "images/og-blog.png" }}{{- .Permalink }}{{- end }}{{- end }}
 {{- define "og-type" }}article{{- end }}
 {{- define "main" }}
-<hr />
-<h1>{{ .Title }}</h1>
-<p>{{ .PublishDate | time.Format "2006-01-02 15:04 -07:00" }}{{- if .Param "word-count" }} &#x2551; <span class="wc"> &sim; {{ $wc := .WordCount }}{{ lang.FormatNumberCustom 0 $wc "- . '" }} words</span>{{- end }}</p>
+<h1 class="post-title">{{ .Title }}</h1>
+<p class="post-description">{{- .Description -}}</p>
+<p class="post-metadata">{{ .PublishDate | time.Format "January _2, 2006" }}{{- if .Param "word-count" }} &bull; <span class="wc"> {{ $wc := .WordCount }}{{ lang.FormatNumberCustom 0 $wc "- . '" }} words</span>{{- end }}</p>
 <hr />
 {{- if .Param "table-of-contents" }}
 {{ .TableOfContents }}

@@ -9,8 +9,8 @@
     --background:               #282c34;
     --background-code:          #191e26;
     --scrollbar:                #3d4148;
-    --border-color:             #dcdfe4;
+    --border-color:             #dcdfe4aa;
     --border-thickness:         1px;
     --width:                    80ch;
-    --paragraph-spacing:        1.5em;
+    --paragraph-spacing:        1.5rem;
 }
