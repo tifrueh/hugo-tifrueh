@@ -137,7 +137,7 @@ sup {
 
 footer {
     text-align: center;
-    padding-top: 75px;
+    padding-top: 100px;
     padding-bottom: 30px;
     font-size: 0.8em;
 }
@@ -387,12 +387,6 @@ mjx-container {
 #four-o-four {
     font-size: 3em;
     margin: 0px;
-}
-
-#footer-rule {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #icon-github {
