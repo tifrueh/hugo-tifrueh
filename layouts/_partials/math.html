@@ -1,4 +1,4 @@
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+<script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
 <script>
   MathJax = {
     tex: {
@@ -7,6 +7,9 @@
     },
     loader:{
       load: ['ui/safe']
+    },
+    output: {
+      displayOverflow: 'scroll',
     },
   };
 </script>

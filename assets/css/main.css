@@ -43,6 +43,7 @@ html, body {
 header, main, footer {
     max-width: var(--width);
     width: 80%;
+    scrollbar-color: var(--scrollbar) var(--background);
 }
 
 header {
@@ -210,7 +211,6 @@ div.chroma {
     width: 100%;
     font-size: .85rem;
     overflow-x: auto;
-    scrollbar-color: var(--scrollbar) var(--background);
 }
 
 blockquote {
@@ -222,11 +222,6 @@ blockquote {
 
 blockquote em {
     font-style: normal;
-}
-
-mjx-container {
-    overflow-x: auto;
-    overflow-y: hidden;
 }
 
 .top-flex-div {
