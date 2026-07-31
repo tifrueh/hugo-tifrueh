@@ -15,6 +15,7 @@
         <email>{{ site.Params.author.email }}</email>
     </author>
     <link href="{{ $feedlink }}" rel="self" type="application/atom+xml" />
+    <link href="{{ site.Home.Permalink }}" rel="alternate" />
     <generator>Hugo</generator>
     <icon>{{- with resources.Get "images/favicon-96x96.png" -}}{{- .RelPermalink }}{{- end }}</icon>
     <rights>{{ site.Copyright }}</rights>
