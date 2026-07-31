@@ -36,6 +36,12 @@ hard-referenced from multiple places:
 | `/contact/`           | A page containing contact information.                                         |
 | `/legal-information/` | A page containing legal information like the copyright and the privacy policy. |
 
+## Note on the `blog` Section
+
+The `blog` section doesn't *technically* have to exist when using this template,
+but the general assumption is that it does. It is where the RSS and Atom
+templates pull the posts from.
+
 ## Configuration Merge
 
 The configuration settings potentially relevant for merging in `hugo.toml` are
