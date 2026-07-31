@@ -29,11 +29,11 @@
             <name>{{ .name }}</name>
             <email>{{ .email }}</email>
             {{- else }}
-            {{ with site.Params.author }}
+            {{- with site.Params.author }}
             <name>{{ .name }}</name>
             <email>{{ .email }}</email>
-            {{ end }}
-            {{ end }}
+            {{- end }}
+            {{- end }}
         </author>
         <content type="html">{{ .Content | transform.XMLEscape | safeHTML }}</content>
         <link rel="alternate" href="{{ .Permalink }}" />
