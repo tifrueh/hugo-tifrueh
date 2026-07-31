@@ -1,0 +1,44 @@
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+{{- $posts := (where site.RegularPages "Section" "blog") }}
+{{- $limit := site.Config.Services.RSS.Limit }}
+{{- if ge $limit 1 }}
+    {{- $pages = $pages | first $limit }}
+{{- end }}
+{{- $feedlink := "N/A" }}
+{{- with .OutputFormats.Get "atom" }}{{ $feedlink = .Permalink }}{{ end }}
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>{{ site.Home.Permalink }}</id>
+    <title>Posts &#x2022; {{ site.Title }}</title>
+    <updated>{{ (index $posts.ByLastmod.Reverse 0).Lastmod.Format "2023-10-15T13:18:50-07:00" | safeHTML }}</updated>
+    <author>
+        <name>{{ site.Params.author.name }}</name>
+        <email>{{ site.Params.author.email }}</email>
+    </author>
+    <link href="{{ $feedlink }}" rel="self" type="application/atom+xml" />
+    <generator>Hugo</generator>
+    <icon>{{- with resources.Get "images/favicon-96x96.png" -}}{{- .RelPermalink }}{{- end }}</icon>
+    <rights>{{ site.Copyright }}</rights>
+    <subtitle>{{ site.Home.Description }}</subtitle>
+    {{- range $posts }}
+    <entry>
+        <id>{{ .Permalink }}</id>
+        <title>{{ .Title }}</title>
+        <updated>{{ .Lastmod.Format "2023-10-15T13:18:50-07:00" }}</updated>
+        <author>
+            {{- with .Params.author }}
+            <name>{{ .name }}</name>
+            <email>{{ .email }}</email>
+            {{- else }}
+            {{ with site.Params.author }}
+            <name>{{ .name }}</name>
+            <email>{{ .email }}</email>
+            {{ end }}
+            {{ end }}
+        </author>
+        <content type="html">{{ .Content | transform.XMLEscape | safeHTML }}</content>
+        <link rel="alternate" href="{{ .Permalink }}" />
+        <summary>{{ .Description }}</summary>
+        <published>{{ .Date.Format "2023-10-15T13:18:50-07:00" | safeHTML }}</published>
+    </entry>
+    {{- end }}
+</feed>

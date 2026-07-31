@@ -4,6 +4,10 @@
     tabWidth = 4
     noClasses = false
 
+[mediaTypes]
+[mediaTypes."application/atom+xml"]
+    suffixes = [ "xml", "atom" ]
+
 [outputFormats]
 [outputFormats.rss]
     baseName = "rss"
@@ -13,6 +17,16 @@
     noUgly = true
     permalinkable = false
     rel = "alternate"
+[outputFormats.atom]
+    baseName = "atom"
+    isHTML = false
+    isPlainText = false
+    mediaType = "application/atom+xml"
+    noUgly = true
+    notAlternative = false
+    permalinkable = false
+    rel = "alternate"
+
 
 [module]
 [module.hugoVersion]
