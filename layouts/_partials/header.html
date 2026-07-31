@@ -1,10 +1,10 @@
 <a class="invisible-link" href="{{- urls.RelURL "" -}}"><h1 id="main-title">{{- .Site.Title }}</h1></a>
 <nav class="icon-nav">
-    <a class="icon-nav-button" href="https://github.com/tifrueh" rel="me">
+    <a class="icon-nav-button" href="{{ site.Params.urls.github }}" rel="me">
         <svg class="icon accent-foreground" id="icon-github"><use xlink:href="#github"></use></svg>
         GitHub
     </a>
-    <a class="icon-nav-button" href="https://fosstodon.org/@tifrueh" rel="me">
+    <a class="icon-nav-button" href="{{ site.Params.urls.mastodon }}" rel="me">
         <svg class="icon accent-magenta" id="icon-mastodon"><use xlink:href="#mastodon"></use></svg>
         Mastodon
     </a>
