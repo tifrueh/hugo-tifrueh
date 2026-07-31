@@ -4,9 +4,16 @@ This is the HUGO theme module I wrote for my personal website.
 
 ## Custom Site Parameters
 
-| Parameter             | Default Value         | Description                                                   |
-| ---                   | ---                   | ---                                                           |
-| `author.name`         | NONE                  | The author to put into the copyright notice.                  |
+| Parameter         | Default Value | Description                                                      |
+| ---               | ---           | ---                                                              |
+| `author.name`     | NONE          | The author's name (site-wide default, override on page-basis).   |
+| `author.email`    | NONE          | The author's email. (site-wide default, override on page-basis). |
+| `editor.name`     | NONE          | The site editor's name. Used in the RSS feed metadata.           |
+| `editor.email`    | NONE          | The site editor's email. Used in the RSS feed metadata.          |
+| `webmaster.name`  | NONE          | The site webmaster's name. Used in the RSS feed metadata.        |
+| `webmaster.email` | NONE          | The site webmaster's email. Used in the RSS feed metadata.       |
+| `urls.github`     | NONE          | The URL for the GitHub link in the menubar.                      |
+| `urls.mastodon`   | NONE          | The URL for the Mastodon link in the menubar.                    |
 
 ## Custom Page Parameters
 
@@ -17,6 +24,17 @@ This is the HUGO theme module I wrote for my personal website.
 | `table-of-contents`   | `false`               | Show a table of contents at the beginning of a page.                          |
 | `word-count`          | `false`               | Show the rough amount of words on a page at its beginning.                    |
 | `reverse-next-prev`   | `false`               | (On section index) Reverse direction of next/prev navigation of child pages.  |
+
+## Necessary Pages
+
+The following three top-level pages should always exist, as they are
+hard-referenced from multiple places:
+
+| Link                  | Description                                                                    |
+| ---                   | ---                                                                            |
+| `/subscribe/`         | A page containing instructions on how to subscribe to updates on the site.     |
+| `/contact/`           | A page containing contact information.                                         |
+| `/legal-information/` | A page containing legal information like the copyright and the privacy policy. |
 
 ## Configuration Merge
 
