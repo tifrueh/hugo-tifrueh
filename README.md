@@ -4,16 +4,19 @@ This is the HUGO theme module I wrote for my personal website.
 
 ## Custom Site Parameters
 
-| Parameter         | Default Value | Description                                                      |
-| ---               | ---           | ---                                                              |
-| `author.name`     | NONE          | The author's name (site-wide default, override on page-basis).   |
-| `author.email`    | NONE          | The author's email. (site-wide default, override on page-basis). |
-| `editor.name`     | NONE          | The site editor's name. Used in the RSS feed metadata.           |
-| `editor.email`    | NONE          | The site editor's email. Used in the RSS feed metadata.          |
-| `webmaster.name`  | NONE          | The site webmaster's name. Used in the RSS feed metadata.        |
-| `webmaster.email` | NONE          | The site webmaster's email. Used in the RSS feed metadata.       |
-| `urls.github`     | NONE          | The URL for the GitHub link in the menubar.                      |
-| `urls.mastodon`   | NONE          | The URL for the Mastodon link in the menubar.                    |
+| Parameter            | Default Value | Description                                                                          |
+| ---                  | ---           | ---                                                                                  |
+| `author.name`        | NONE          | The author's name (site-wide default, override on page-basis).                       |
+| `author.email`       | NONE          | The author's email. (site-wide default, override on page-basis).                     |
+| `editor.name`        | NONE          | The site editor's name. Used in the RSS feed metadata.                               |
+| `editor.email`       | NONE          | The site editor's email. Used in the RSS feed metadata.                              |
+| `webmaster.name`     | NONE          | The site webmaster's name. Used in the RSS feed metadata.                            |
+| `webmaster.email`    | NONE          | The site webmaster's email. Used in the RSS feed metadata.                           |
+| `copyright.baseYear` | NONE          | The base year for the copyright notices (site-wide default, override on page-basis). |
+| `copyright.entity`   | NONE          | The entity to use in copyright notices (site-wide default, override on page-basis).  |
+| `copyright.license`  | NONE          | The license to use in copyright notices (site-wide default, override on page-basis). |
+| `urls.github`        | NONE          | The URL for the GitHub link in the menubar.                                          |
+| `urls.mastodon`      | NONE          | The URL for the Mastodon link in the menubar.                                        |
 
 ## Custom Page Parameters
 

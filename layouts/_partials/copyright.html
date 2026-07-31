@@ -1,0 +1,4 @@
+{{- $baseYear := or (.Param "copyright.baseYear") (site.Param "copyright.baseYear") }}
+{{- $entity := or (.Param "copyright.entity") (site.Param "copyright.entity") }}
+{{- $license := or (.Param "copyright.license") (site.Param "copyright.license") -}}
+&#xa9; {{ $baseYear }}&#x2013;{{ time.Now | time.Format "2006" }} {{ $entity }}{{ with $license }}, licensed under {{ . }}.{{ end }}

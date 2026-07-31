@@ -18,7 +18,7 @@
     <link href="{{ site.Home.Permalink }}" rel="alternate" />
     <generator>Hugo</generator>
     <icon>{{- with resources.Get "images/favicon-96x96.png" -}}{{- .RelPermalink }}{{- end }}</icon>
-    <rights>{{ site.Copyright }}</rights>
+    <rights>{{ partial "copyright.html" . }}</rights>
     <subtitle>{{ site.Home.Description }}</subtitle>
     {{- range $posts }}
     <entry>
