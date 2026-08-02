@@ -6,9 +6,9 @@
 <meta property="og:image" content="{{- block "og-image" . }}{{- with resources.Get "images/og-index.png" }}{{- .Permalink }}{{- end }}{{- end}}" />
 <meta property="og:type" content="{{- block "og-type" . }}website{{- end}}" />
 <meta property="fediverse:creator" content="@tifrueh@fosstodon.org" />
-{{- with site.Home.OutputFormats.Get "rss" }}
+{{- with site.Home.OutputFormats.Get "atom" }}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink }}" title="Posts &#x00B7; {{ site.Title }}" />
 {{- end }}
-{{- with site.Home.OutputFormats.Get "atom" }}
+{{- with site.Home.OutputFormats.Get "rss" }}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink }}" title="Posts &#x00B7; {{ site.Title }}" />
 {{- end }}
