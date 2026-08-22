@@ -2,6 +2,7 @@
 <meta property="og:description" content="{{- if .Description }}{{ .Description }}{{- else }}{{ .Content | truncate 150 }}{{- end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:title" content="{{ .Title }}" />
+<meta property="og:site_name" content="{{ site.Title }}" />
 <meta property="fediverse:creator" content="@tifrueh@fosstodon.org" />
 {{- with site.Home.OutputFormats.Get "atom" }}
 <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink }}" title="Posts &#x00B7; {{ site.Title }}" />
