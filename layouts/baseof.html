@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{- .Language.Locale }}">
     <head>
+    <!--
+        NOTE: It's a bit ugly to put these metadata definitions here when they
+        would technically belong in the head/metadata partial, but these lines
+        need to define blocks, and that is only possible in the baseof template
+        due to the design of HUGO.
+    -->
+    <title>{{- block "title" . }}{{ .Title }} &bull; {{ .Site.Title }}{{- end}}</title>
     {{ partial "head.html" . }}
+    <meta property="og:image" content="{{- block "og-image" . }}{{- with resources.Get "images/og-index.png" }}{{- .Permalink }}{{- end }}{{- end}}" />
+    <meta property="og:type" content="{{- block "og-type" . }}website{{- end}}" />
     </head>
     <body>
         <div class="top-flex-div">

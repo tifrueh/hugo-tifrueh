@@ -1,6 +1,4 @@
-{{- block "footer" . }}
 {{- partial "footer/next-prev.html" . }}
 {{ with .GitInfo }}<p id="content-commit-hash">Commit: {{ .Hash }}</p>{{ end }}
 <p>{{ partial "copyright.html" . }}</p>
 <p><a href="{{- urls.RelURL "contact/" -}}">Contact</a> &bull; <a href="{{- urls.RelURL "legal-information/" -}}">Legal Information</a></p>
-{{- end }}
