@@ -25,7 +25,6 @@ This is the HUGO theme module I wrote for my personal website.
 | `book-style`        | `false`       | Format text in a more book-like manner.                                      |
 | `drop-cap`          | `false`       | Add a drop cap to the first paragraph.                                       |
 | `math`              | `false`       | Load MathJax to display math on the page.                                    |
-| `reverse-next-prev` | `false`       | (On section index) Reverse direction of next/prev navigation of child pages. |
 
 ## Necessary Pages
 
