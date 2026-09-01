@@ -43,8 +43,8 @@ The `blog` section doesn't *technically* have to exist when using this template,
 but the general assumption is that it does. It is where the RSS and Atom
 templates pull the posts from.
 
-Also note that the `book-style`, `drop-cap` and `word-count` parameters are
-automatically enabled for all pages in this section and cannot be disabled.
+Also note that the `book-style`, `drop-cap` parameters are automatically enabled
+for all pages in this section and cannot be disabled.
 
 Furthermore, the following additional parameters are available for pages in this
 section:

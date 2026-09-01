@@ -3,7 +3,7 @@
 {{- define "main" }}
 <h1 class="post-title">{{ .Title }}</h1>
 <p class="post-description">{{- .Description -}}</p>
-<p class="post-metadata">{{ .PublishDate | time.Format "January _2, 2006" }}{{- if .Param "word-count" }} &bull; <span class="wc">{{- printf "%s words / %d minute%s" (.WordCount | lang.FormatNumber 0) .ReadingTime (cond (gt .ReadingTime 1) "s" "") -}}</span>{{- end }}</p>
+<p class="post-metadata">{{ .PublishDate | time.Format "January _2, 2006" }} &bull; <span class="wc">{{- printf "%s words / %d minute%s" (.WordCount | lang.FormatNumber 0) .ReadingTime (cond (gt .ReadingTime 1) "s" "") -}}</span></p>
 <hr />
 {{- if .Param "table-of-contents" }}
 {{ .TableOfContents }}
