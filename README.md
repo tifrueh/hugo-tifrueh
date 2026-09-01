@@ -20,11 +20,11 @@ This is the HUGO theme module I wrote for my personal website.
 
 ## Custom Page Parameters
 
-| Parameter           | Default Value | Description                                                                  |
-| ---                 | ---           | ---                                                                          |
-| `book-style`        | `false`       | Format text in a more book-like manner.                                      |
-| `drop-cap`          | `false`       | Add a drop cap to the first paragraph.                                       |
-| `math`              | `false`       | Load MathJax to display math on the page.                                    |
+| Parameter    | Default Value | Description                                                                                                                             |
+| ---          | ---           | ---                                                                                                                                     |
+| `book-style` | `false`       | Format text in a more book-like manner.                                                                                                 |
+| `drop-cap`   | `false`       | Add a drop cap to the first paragraph.                                                                                                  |
+| `math`       | `false`       | Force the loading of MathJax to display math on the page. (Note that MathJax *should* load automatically if there is math on the page.) |
 
 ## Necessary Pages
 

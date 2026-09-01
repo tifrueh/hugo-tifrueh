@@ -3,6 +3,13 @@
     lineNos = true
     tabWidth = 4
     noClasses = false
+[markup.goldmark]
+[markup.goldmark.extensions]
+[markup.goldmark.extensions.passthrough]
+    enable = true
+    [markup.goldmark.extensions.passthrough.delimiters]
+    block = [["$$", "$$"]]
+    inline = [["$", "$"]]
 
 [mediaTypes]
 [mediaTypes."application/atom+xml"]
@@ -26,7 +33,6 @@
     notAlternative = false
     permalinkable = false
     rel = "alternate"
-
 
 [module]
 [module.hugoVersion]
