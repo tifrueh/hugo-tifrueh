@@ -50,14 +50,16 @@ header {
     display: flex;
     flex-flow: row wrap;
     gap: 0.5rem;
-    row-gap: 0.75rem;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 30px;
 }
 
 main {
     flex-grow: 1;
+}
+
+main :first-child {
+    margin-top: 0;
 }
 
 hr {
@@ -76,6 +78,10 @@ div.content p {
     hyphens: auto;
     line-height: 1.62;
     margin: var(--paragraph-spacing) 0;
+}
+
+div.content.home :first-child {
+    margin-top: 0;
 }
 
 div.book-style p:has(+p) {
@@ -137,16 +143,6 @@ h1,
 h2,
 h3 {
     color: var(--blue);
-}
-
-h2 {
-    border-bottom: var(--border-thickness) var(--border-color) solid;
-    padding-bottom: 0.5em;
-}
-
-h2.nounderline {
-    border-bottom: 0;
-    padding-bottom: 0;
 }
 
 a {
@@ -378,4 +374,8 @@ blockquote em {
 
 #icon-github {
     margin-right: 3px;
+}
+
+#main-nav-separator {
+    width: 100%;
 }

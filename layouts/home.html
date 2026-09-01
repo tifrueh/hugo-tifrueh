@@ -2,7 +2,7 @@
 {{- .Site.Title }}
 {{- end }}
 {{- define "main" }}
-<div class="content{{- if .Param "book-style" }} book-style{{- end }}{{- if .Param "drop-cap" }} drop-cap{{- end }}">
+<div class="content home{{- if .Param "book-style" }} book-style{{- end }}{{- if .Param "drop-cap" }} drop-cap{{- end }}">
     {{ .Content }}
 </div>
 <div class="pages">
