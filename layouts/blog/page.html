@@ -4,6 +4,15 @@
 <h1 class="post-title">{{ .Title }}</h1>
 <p class="post-description">{{- .Description -}}</p>
 <p class="post-metadata">{{ .PublishDate | time.Format "January _2, 2006" }} &bull; <span class="wc">{{- printf "%s words / %d minute%s" (.WordCount | lang.FormatNumber 0) .ReadingTime (cond (gt .ReadingTime 1) "s" "") -}}</span></p>
+{{- if gt (time.Now.Sub (.PublishDate)).Hours 17532 }}
+<blockquote class="alert alert-important">
+    <p class="alert-heading">
+    <svg class="alert-icon"><use xlink:href="#alert-icon-important"></use></svg>
+    Important
+    </p>
+    This post was published more than two years ago. It is therefore important to note that any opinions, positions or values expressed within it may no longer reflect the author's current ones.
+</blockquote>
+{{- end }}
 <hr />
 {{- if .Param "table-of-contents" }}
 {{ .TableOfContents }}
