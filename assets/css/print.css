@@ -33,7 +33,3 @@ header, main, footer {
 footer {
     margin-top: 1rem;
 }
-
-div.book-style > hr.ornamental::before {
-    display: none;
-}
