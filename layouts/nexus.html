@@ -1,6 +1,6 @@
 {{- define "main" }}
     <h1>{{ .Title }}</h1>
-    <div class="content {{- if .Param "book-style" }}book-style{{- end }}">
+    <div class="content{{- if .Param "book-style" }} book-style{{- end }}{{- if .Param "drop-cap" }} drop-cap{{- end }}">
         {{ .Content }}
     </div>
     <div class="pages" >

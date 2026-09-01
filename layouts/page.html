@@ -10,7 +10,7 @@
     {{ .TableOfContents }}
     <hr />
     {{- end }}
-    <div class="content{{- if .Param "book-style" }} book-style{{- end }}">
+    <div class="content{{- if .Param "book-style" }} book-style{{- end }}{{- if .Param "drop-cap" }} drop-cap{{- end }}">
         {{ .Content }}
     </div>
 {{- end }}

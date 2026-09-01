@@ -20,13 +20,12 @@ This is the HUGO theme module I wrote for my personal website.
 
 ## Custom Page Parameters
 
-| Parameter             | Default Value         | Description                                                                   |
-| ---                   | ---                   | ---                                                                           |
-| `book-style`          | `false`               | Format text in a more book-like manner.                                       |
-| `math`                | `false`               | Load MathJax to display math on the page.                                     |
-| `table-of-contents`   | `false`               | Show a table of contents at the beginning of a page.                          |
-| `word-count`          | `false`               | Show the rough amount of words on a page at its beginning.                    |
-| `reverse-next-prev`   | `false`               | (On section index) Reverse direction of next/prev navigation of child pages.  |
+| Parameter           | Default Value | Description                                                                  |
+| ---                 | ---           | ---                                                                          |
+| `book-style`        | `false`       | Format text in a more book-like manner.                                      |
+| `drop-cap`          | `false`       | Add a drop cap to the first paragraph.                                       |
+| `math`              | `false`       | Load MathJax to display math on the page.                                    |
+| `reverse-next-prev` | `false`       | (On section index) Reverse direction of next/prev navigation of child pages. |
 
 ## Necessary Pages
 
@@ -44,6 +43,16 @@ hard-referenced from multiple places:
 The `blog` section doesn't *technically* have to exist when using this template,
 but the general assumption is that it does. It is where the RSS and Atom
 templates pull the posts from.
+
+Also note that the `book-style`, `drop-cap` and `word-count` parameters are
+automatically enabled for all pages in this section and cannot be disabled.
+
+Furthermore, the following additional parameters are available for pages in this
+section:
+
+| Parameter           | Default Value | Description                                                                  |
+| ---                 | ---           | ---                                                                          |
+| `table-of-contents` | `false`       | Show a table of contents at the beginning of a page.                         |
 
 ## Configuration Merge
 
